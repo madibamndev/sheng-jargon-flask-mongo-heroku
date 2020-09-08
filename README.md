@@ -21,11 +21,32 @@ This is the [Sheng Jargon Site PDF Mockup](images/screenshots/sheng-jargon-scree
 
 ## Features
 
-### Colour palettes for this site are:
+### The Colour palettes and Font Families for this site are as shown below:
 
 ```
-Background-color Hex code: #fff59d
-Text color Hex code: #311b92
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Jost', sans-serif;
+    color: #311b92;
+}
+
+a {
+    font-family: 'Jost', sans-serif;
+}
+
+p {
+    font-family: 'Josefin Sans', sans-serif;
+    color: #311b92;
+}
+
+i {
+    color: #fff59d;
+}
+
+body {
+    background-color: #fff59d;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
 ```
 
 ### Google Fonts
@@ -49,7 +70,7 @@ Each page is divided into four parts:
      Contact
  
  header
-     Paragraph
+     content
 
  main
      content
