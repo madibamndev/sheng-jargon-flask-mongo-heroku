@@ -69,14 +69,14 @@ Feature 1 (Quick Word Search) &mdash; *allows the user to enter a simple quick w
  <form>
     <fieldset>
         <legend>Quick Word Search Form</legend>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="quick-word-search" type="text" class="validate">
-                    <label for="quick-word-search">Quick Word Search</label>
-                    <span class="helper-text" data-error="wrong" data-success="right">One Word or an expression</span>
-                </div>
-                </div>
-                    <a class="waves-effect waves-light btn deep-purple darken-4">Search</a>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="quick-word-search" type="text" class="validate">
+                <label for="quick-word-search">Quick Word Search</label>
+                <span class="helper-text" data-error="wrong" data-success="right">One Word or an expression</span>
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn deep-purple darken-4">Search</a>
     </fieldset>
 </form> 
 ```
@@ -87,47 +87,46 @@ Feature 2 (Advanced Word Search) &mdash; *allows the user to add more options in
 <form>
     <fieldset>
         <legend>Advanced Word Search Form</legend>
-            <div class="row">
-                <div class="input-field col s12 m6 l4 xl3">
-                    <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="adverb">Adjective</option>
-                        <option value="adjective">Adverb</option>
-                        <option value="determiner">Conjunction</option>
-                        <option value="conjunction">Determiner</option>
-                        <option value="noun">Interjection</option>
-                        <option value="interjection">Noun</option>
-                        <option value="pronoun">Preposition</option>
-                        <option value="preposition">Pronoun</option>
-                        <option value="verb">Verb</option>
-                    </select>
-                    <label>Part Of Speech</label>
-                </div>
-                <div class="input-field col s12 m6 l4 xl3 offset-xl1">
-                    <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="meaning">Meaning</option>
-                        <option value="definition">Definition</option>
-                    </select>
-                    <label>Meaning or Definition</label>
-                </div>
-                <div class="input-field col s12 m6 l4 xl3 offset-xl1">
-                    <select>
-                        <option value="" disabled selected>Choose your option</option>
-                        <option value="synonym">Synonym</option>
-                        <option value="2">Antonym</option>
-                    </select>
-                    <label>Synonym or Antonym</label>
-                </div>
-                </div>
-                <div class="row">
-                    <div class="input-field col s12">
-                        <input id="advanced-word-search" type="text" class="validate">
-                        <label for="advanced-word-search">Advanced Word Search</label>
-                        <span class="helper-text" data-error="wrong" data-success="right">One Word
-                                                or an expression</span>
-                </div>
+        <div class="row">
+            <div class="input-field col s12 m6 l4 xl3">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="adverb">Adjective</option>
+                    <option value="adjective">Adverb</option>
+                    <option value="determiner">Conjunction</option>
+                    <option value="conjunction">Determiner</option>
+                    <option value="noun">Interjection</option>
+                    <option value="interjection">Noun</option>
+                    <option value="pronoun">Preposition</option>
+                    <option value="preposition">Pronoun</option>
+                    <option value="verb">Verb</option>
+                </select>
+                <label>Part Of Speech</label>
             </div>
+            <div class="input-field col s12 m6 l4 xl3 offset-xl1">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="meaning">Meaning</option>
+                    <option value="definition">Definition</option>
+                </select>
+                <label>Meaning or Definition</label>
+            </div>
+            <div class="input-field col s12 m6 l4 xl3 offset-xl1">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="synonym">Synonym</option>
+                    <option value="2">Antonym</option>
+                </select>
+                <label>Synonym or Antonym</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="advanced-word-search" type="text" class="validate">
+                <label for="advanced-word-search">Advanced Word Search</label>
+                <span class="helper-text" data-error="wrong" data-success="right">One Word or an expression</span>
+            </div>
+        </div>
         <a class="waves-effect waves-light btn deep-purple darken-4">Search<a>
     </fieldset>
 </form>
@@ -169,28 +168,110 @@ Feature 5 (Browse Jargon by Alphabet) &mdash; *allows the user to browse through
 Feature 6 (Categories) &mdash; *allows the user to manage the categories.*
 
 ```
- Word or 
- 
-     Word
-     Expression
-
- Meaning of Word or Expression
-
- Definition or Word or Expression
-
- Synonyms of the word or expression
-
- Part of Speech
-
-     Adjective
-     Adverb
-     Conjunction
-     Determiner
-     Interjection
-     Noun
-     Preposition
-     Pronoun
-     Verb
+ <form>
+    <fieldset>
+        <legend>Word or Expression Submission Form</legend>
+        <div class="row">
+            <div class="input-field col s12 m6 l3 xl3">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="word">Word</option>
+                    <option value="expression">Expression</option>
+                </select>
+                <label>Word or Expression</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m12 l12 xl12">
+                <input id="input-word-or-expression" type="text" class="validate">
+                <label for="input-word-or-expression">Word or Expression</label>
+            </div>    
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6 l6 xl6">
+                <input id="input-word-or-expression-meaning" type="text" class="validate" data-length="200">
+                <label for="input-word-or-expression-meaning">Meaning of Word or Expression</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Meaning of the word or expression in English.</span>
+            </div>
+            <div class="input-field col s12 m6 l6 xl6">
+                <input id="input-word-or-expression-definition" type="text" class="validate" data-length="200">
+                <label for="input-word-or-expression-definition">Definition of Word or Expression</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Definition of the word or expression in English.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m12 l6 xl6">
+                <input id="input-word-or-expression-synonym" type="text" class="validate">
+                <label for="input-word-or-expression-synonym">Synonyms of the word or expression</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Words or expression with a similar meaning e.g. <em>1<sup>st</sup> synonym, 2<sup>nd</sup> synonym, ...</em></span>
+            </div>
+            <div class="input-field col s12 m12 l6 xl6">
+                <input id="input-word-or-expression-antonym" type="text" class="validate">
+                <label for="input-word-or-expression-antonym">Antonyms of the word or expression</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Words or expression with an opposite meaning e.g. <em>1<sup>st</sup> opposite, 2<sup>nd</sup> opposite, ...</em></span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6 l6 xl3">
+                <select>
+                    <option value="" disabled selected>Choose your option</option>
+                    <option value="adjective">Adjective</option>
+					<option value="adverb">Adverb</option>
+					<option value="conjunction">Conjunction</option>
+                    <option value="determiner">Determiner</option>
+                    <option value="interjection">Interjection</option>
+                    <option value="noun">Noun</option>
+                    <option value="preposition">Preposition</option>
+                    <option value="pronoun">Pronoun</option>
+                    <option value="verb">Verb</option>
+                </select>
+                <label>Part Of Speech</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12 m6 l6 xl5">
+                <select>
+                    <option value="" disabled selected>Choose the alphabet</option>
+                    <option value="a">Aa</option>
+                    <option value="b">Bb</option>
+                    <option value="c">Cc</option>
+                    <option value="d">Dd</option>
+                    <option value="e">Ee</option>
+                    <option value="f">Ff</option>
+                    <option value="g">Gg</option>
+                    <option value="h">Hh</option>
+                    <option value="i">Ii</option>
+                    <option value="j">Jj</option>
+                    <option value="k">Kk</option>
+                    <option value="l">Ll</option>
+                    <option value="m">Mm</option>
+                    <option value="n">Nn</option>
+                    <option value="o">Oo</option>
+                    <option value="p">Pp</option>
+                    <option value="q">Qq</option>
+                    <option value="r">Rr</option>
+                    <option value="s">Ss</option>
+                    <option value="t">Tt</option>
+                    <option value="u">Uu</option>
+                    <option value="v">Vv</option>
+                    <option value="w">Ww</option>
+                    <option value="x">Xx</option>
+                    <option value="y">Yy</option>
+                    <option value="z">Zz</option>
+                </select>
+                <label>Alphabets</label>
+                <span class="helper-text" data-error="wrong" data-success="right">Choose the first alphabet of the word or expression.</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col s12">
+                <input id="input-date-added" type="text" class="datepicker">
+                <label for="input-date-added">Date of the added word or expression</label>
+            </div>
+        </div>
+        <a class="waves-effect waves-light btn deep-purple darken-4"><i class="material-icons right">add_circle</i>Submit</a>
+    </fieldset>
+</form>
 ```
 
 #### Contact Page
@@ -201,28 +282,33 @@ Feature 7 (Contact Form) &mdash; *allows the user to send feedback and/or a mess
 <form>
     <fieldset>
         <legend>Contact Information</legend>
-                    <input id="first_name" type="text" class="validate">
-                    <label for="first_name">First Name</label> 
-                    <input id="last_name" type="text" class="validate">
-                    <label for="last_name">Last Name</label>
-            <br>
-            <div class="row">
-                <div class="input-field col s12">
-                    <input id="email" type="email" class="validate">
-                    <label for="email">Email</label>
-                    <span class="helper-text" data-error="wrong" data-success="right">
-                                        We'll never share your email with anyone else.</span>
-                </div>
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="first_name" type="text" class="validate">
+                <label for="first_name">First Name</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="last_name" type="text" class="validate">
+                <label for="last_name">Last Name</label>
             </div>
             <br>
-            <div class="row">
-                <div class="input-field col s12">
-                    <textarea id="input-your-message" class="materialize-textarea" data-length="120"></textarea>
-                    <label for="textarea2">Message</label>
-                </div>
+        </div>
+        <div class="row">
+            <div class="input-field col s12">
+                <input id="email" type="email" class="validate">
+                <label for="email">Email</label>
+                <span class="helper-text" data-error="wrong" data-success="right"> We'll never share your email with anyone else.</span>
             </div>
-            <br>
-            <a class="waves-effect waves-light btn deep-purple darken-4">Submit</a>
+        </div>
+        <br>
+        <div class="row">
+            <div class="input-field col s12">
+                <textarea id="input-your-message" class="materialize-textarea" data-length="120"></textarea>
+                <label for="textarea2">Message</label>
+            </div>
+        </div>
+        <br>
+        <a class="waves-effect waves-light btn deep-purple darken-4">Submit</a>
     </fieldset>
 </form>
 ```
