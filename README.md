@@ -65,6 +65,7 @@ Each page is divided into four parts:
 
 Feature 1 (Quick Word Search) &mdash; *allows the user to enter a simple quick word search.*
 
+```
  <form>
     <fieldset>
         <legend>Quick Word Search Form</legend>
@@ -78,10 +79,11 @@ Feature 1 (Quick Word Search) &mdash; *allows the user to enter a simple quick w
                     <a class="waves-effect waves-light btn deep-purple darken-4">Search</a>
     </fieldset>
 </form> 
-
+```
 
 Feature 2 (Advanced Word Search) &mdash; *allows the user to add more options in their word search.*
 
+```
 <form>
     <fieldset>
         <legend>Advanced Word Search Form</legend>
@@ -129,7 +131,7 @@ Feature 2 (Advanced Word Search) &mdash; *allows the user to add more options in
         <a class="waves-effect waves-light btn deep-purple darken-4">Search<a>
     </fieldset>
 </form>
-
+```
 
 #### Jargon Page
 
@@ -195,6 +197,7 @@ Feature 6 (Categories) &mdash; *allows the user to manage the categories.*
 
 Feature 7 (Contact Form) &mdash; *allows the user to send feedback and/or a message to the App meaintenance team.*
 
+```
 <form>
     <fieldset>
         <legend>Contact Information</legend>
@@ -222,6 +225,7 @@ Feature 7 (Contact Form) &mdash; *allows the user to send feedback and/or a mess
             <a class="waves-effect waves-light btn deep-purple darken-4">Submit</a>
     </fieldset>
 </form>
+```
 
 ### Features Left to Implement
 
@@ -262,7 +266,7 @@ Feature 7 (Contact Form) &mdash; *allows the user to send feedback and/or a mess
 
 - [Materialize Media Queries](https://materializecss.com/grid.html) allows me to stack the content into a single column on smaller devices such as smartphones; single and double columns on tablets and single, double or more columns on larger devices.
 
-One bug that I have encountered in my testing  is in my timeline html file. [(X)HTML5 validation results for work.html bug](images-readme.md/bug-work-html-validation.pdf)
+One bug that I have encountered in my testing  is... in my... file. [ bug]()
 
 ## Deployment
 
